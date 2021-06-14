@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Handlebars intro</title>
+    <script type="text/x-template" class="userTemplate">
+      {{#each users}}
+        <tr>
+          <td>User Name</td>
+          <td>{{username}}</td>
+        </tr>
+        <tr>
+          <th>First Name</th>
+          <td><span>{{firstName}}</span></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td>{{lastName}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{email}}</td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>{{city}}</td>
+        </tr>
+
+      {{/each}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <!-- <th>Username</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>City</th> -->
+      </tr>
+      <tbody class="userData"></tbody>
+    </table>
+    <script src="./users.js"></script>
+    <!-- <script src="./user.js"></script> -->
+  </body>
+</html>
