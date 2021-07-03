@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styles/simple-grid-min.css" /> -->
+    <link rel="stylesheet" href="./styles/registration_number.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="regNumberTemplate">
+      {{regiNumbers}}
+      {{regError}}
+      {{filterTown}}
+    </script>
+    <title>Registration Number</title>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 style="text-align: center">
+                <strong style="color: black">Registration Numbers</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div style="text-align: center" class="col-12">
+              <span class="error"></span>
+            </div>
+          </div>
+          <br />
+          <form>
+            <input
+              type="text"
+              class="text-input"
+              placeholder="Please enter registration number eg: CA 123456"
+            />
+            <button type="button" class="add-btn">Add</button>
+          </form>
+          <br />
+          <br />
+          <form>
+            <label>Filter by Town: </label>
+            <select name="town" class="town">
+              <option value="all">Select Town</option>
+              <option value="capetown">Cape Town</option>
+              <option value="paarl">Paarl</option>
+              <option value="bellville">Bellville</option>
+            </select>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button type="button" class="reset-btn">Reset</button>
+          </form>
+          <br />
+          <br />
+          <div class="row">
+            <div style="text-align: center" class="col-12">
+              <span id="message"></span>
+            </div>
+            <!-- <div style="text-align: center" class="col-12">
+                  <span class="error"></span>
+                </div> -->
+          </div>
+        </div>
+        <br />
+      </div>
+      <!-- </div>
+      </div> -->
+    </div>
+    <div class="split right">
+      <div class="centered">
+        <div class="container1">
+          <div class="row">
+            <div class="col-12">
+              <h2 style="text-align: center">
+                <strong style="color: black">Registration Numbers</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div style="text-align: center" class="col-12">
+              <span class="error-msg"></span>
+            </div>
+          </div>
+          <br />
+          <form>
+            <input
+              type="text"
+              class="input-text"
+              placeholder="Please enter registration number eg: CA 654321"
+            />
+            <button type="button" class="btn-add">Add</button>
+          </form>
+          <br />
+          <br />
+          <form>
+            <label>Filter by Town: </label>
+            <select name="town" class="town-select">
+              <option value="all">Select Town</option>
+              <option value="capetown">Cape Town</option>
+              <option value="paarl">Paarl</option>
+              <option value="bellville">Bellville</option>
+            </select>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button type="button" class="btn-reset">Reset</button>
+          </form>
+          <br />
+          <br />
+          <div class="row">
+            <div style="text-align: center" class="col-12">
+              <span class="reg-message"></span>
+            </div>
+            <!-- <div style="text-align: center" class="col-12">
+                  <span class="error"></span>
+                </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./local-storage.js"></script>
+  <script src="./registration_number.js"></script>
+  <script src="./template-storage.js"></script>
+  <script src="./reg-number-template.js"></script>
+  <script src="./registration_number_dom.js"></script>
+</html>
