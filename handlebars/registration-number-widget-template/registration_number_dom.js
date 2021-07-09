@@ -1,5 +1,3 @@
-// var addBtn = document.createElement('button');
-// document.body.appendChild(addBtn);
 var addBtn = document.querySelector(".add-btn");
 var resetBtn = document.querySelector(".reset-btn");
 var inputElement = document.querySelector(".text-input");

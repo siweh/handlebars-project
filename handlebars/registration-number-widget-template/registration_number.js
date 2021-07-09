@@ -1,13 +1,11 @@
 function RegistrationNumbers(registrationNumbersList = []) {
     console.log(registrationNumbersList);
-    //console.log(["qqq","vvv"]);
     var registrationNumbers = registrationNumbersList !== null ? registrationNumbersList : [];
     var errMessage = '';
     var filteredRegNumbers = [];
     function addRegistrationNumber(regNumber) {
         //console.log(regNumber);
         //var numberRegx = /^[A-Z]{2}\s[0-9]{3}[A-Z]{2}\s[0-9]{3}$/;
-
 
         if (!registrationNumbers.includes(regNumber.toLowerCase())){
             if(regNumber.length > 8){
