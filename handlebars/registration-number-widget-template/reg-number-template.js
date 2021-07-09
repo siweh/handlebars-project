@@ -59,7 +59,11 @@ function selectedTown() {
     console.log(getSelectedTownRegNumber);
     var getFilteredTown = regNumbers.getFilteredRegistrationNumbers();
     console.log(getFilteredTown);
+
+    
     document.querySelector(".reg-message").innerHTML = theTemplate({filterTown: getSelectedTownRegNumber});
+    displayRegNumbers(getSelectedTownRegNumber);
+    
 }
 
 function regNumberReset() {
